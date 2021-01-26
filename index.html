@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="maindiv">
+            <div class="internaldiv">
+                <img id="myImg" src="example.png" alt="Example Image">
+                <img id="delete" src="deletesign.png" alt="Delete" onclick="deleteClick()">
+                <h2>Test Product Name</h2>
+                <input type="text" id="prodCode" name="prodCode" placeholder="Production Code" maxlength="10"><br>
+                <input type="text" id="expDate" name="expDate" placeholder="Expiry Date MM/DD/YYYY" maxlength="10"><br>
+                <input type="text" id="prodNum" name="prodNum" placeholder="Number of Products"><br>
+                <!--<input type="text" id="haveProd" name="haveProd" placeholder="* Do you still have the product?"><br>-->
+                <select name="haveProd" id="haveProd" placeholder="* Have you used this product before?">
+                    <option value="" disabled selected>* Do you still have the product?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <br>
+                <select name="usedProdBefore" id="usedProdBefore" placeholder="* Have you used this product before?">
+                    <option value="" disabled selected>* Have you used this product before?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+    </body>
+</html>
